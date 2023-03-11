@@ -7,7 +7,7 @@
 а также материалы курса и другая сопутствующая информация.
 
 Актуальное:
-- [Таблица с текущими результатами](https://docs.google.com/spreadsheets/d/1VAfnSGd63GulSdig8TLISOXBF7MMIUm3egO4U_jdugI/edit#gid=0)
+- [Таблица с текущими результатами](https://docs.google.com/spreadsheets/d/1VAfnSGd63GulSdig8TLISOXBF7MMIUm3egO4U_jdugI/edit?usp=sharing)
 - [Стиль кода как референс](https://www.python.org/dev/peps/pep-0008/)
 
 Технологии:
@@ -30,7 +30,7 @@
     ```shell
     pre-commit run --all-files
     ```
-- Ссылка на свой `fork` репозитория размещается в [таблице](https://docs.google.com/spreadsheets/d/1VAfnSGd63GulSdig8TLISOXBF7MMIUm3egO4U_jdugI/edit#gid=0) курса с результатами.
+- Ссылка на свой `fork` репозитория размещается в [таблице](https://docs.google.com/spreadsheets/d/1VAfnSGd63GulSdig8TLISOXBF7MMIUm3egO4U_jdugI/edit?usp=sharing) курса с результатами.
 - В свой репозиторий необходимо добавить проверяющих с `admin` правами на чтение, редактирование и проверку `pull-request`'ов.
 
 ## Домашние практические работы
@@ -76,7 +76,7 @@
 
 - Для выполнения экспериментов потребуется не только код, но окружение и некоторая его настройка.
 - В качестве окружения используем только [`Google Colab`](https://research.google.com/colaboratory/) ноутбуки. Для его создания требуется только учетная запись `Google`.
-- Создаем ноутбук, ссылка на ноутбук также размещается в [таблице](https://docs.google.com/spreadsheets/d/1Jj_TnMlfzX2gIeTi2kak5GLudAPbs1nzefPxYOdJxjM/edit?usp=sharing) курса.
+- Создаем ноутбук, ссылка на ноутбук также размещается в [таблице](https://docs.google.com/spreadsheets/d/1VAfnSGd63GulSdig8TLISOXBF7MMIUm3egO4U_jdugI/edit?usp=sharing) курса.
 - В `Google Colab` ноутбуке выполняется вся настройка, пишется код для экспериментов, подготовки отчетов и графиков.
 
 ## Структура репозитория
