@@ -21,6 +21,6 @@ from tests.utils import load_float_adj_matrix
         ),
     ],
 )
-def test_sssp(edges, source, ans):
+def test_single_source_shortest_paths(edges, source, ans):
     graph = load_float_adj_matrix(edges)
     assert single_source_shortest_paths(graph, source) == ans

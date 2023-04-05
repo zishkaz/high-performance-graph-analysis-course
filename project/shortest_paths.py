@@ -35,7 +35,7 @@ def multi_source_shortest_paths(graph: Matrix, source: List) -> List:
     for _ in range(n - 1):
         dists.mxm(graph, FP64.MIN_PLUS, out=dists)
 
-    if dists.diag().reduce_float(FP64.min_monoid) < 0:
+    if dists.isne(dists.mxm(graph, FP64.MIN_PLUS)):
         raise ValueError("Negative cycle detected")
 
     res = []
