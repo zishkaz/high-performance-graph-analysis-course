@@ -37,3 +37,11 @@ def load_test_cases_json_triangles(path: Path) -> List:
             ans.append(case["ans"])
 
     return list(zip(matrix, ans))
+
+
+def load_float_adj_matrix(edge_list: List, directed=True) -> Matrix:
+    if not directed:
+        edge_list += [(j, w, i) for i, w, j in edge_list]
+    u, w, v = zip(*edge_list)
+    n = max(u + v) + 1
+    return Matrix.from_lists(u, v, w, nrows=n, ncols=n)
