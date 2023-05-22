@@ -2,6 +2,7 @@ import json
 from pathlib import Path
 from typing import List
 
+from networkx import DiGraph
 from pygraphblas import Matrix
 
 
@@ -45,3 +46,13 @@ def load_float_adj_matrix(edge_list: List, directed=True) -> Matrix:
     u, w, v = zip(*edge_list)
     n = max(u + v) + 1
     return Matrix.from_lists(u, v, w, nrows=n, ncols=n)
+
+
+def load_di_graph_unweighted(edge_list: List) -> DiGraph:
+    graph = DiGraph()
+    for u, _, v in edge_list:
+        graph.add_node(u)
+        graph.add_node(v)
+        graph.add_edge(u, v)
+
+    return graph
